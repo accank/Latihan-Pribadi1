@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sign up</title>
+	</head>
+	<body>
+		<h1><strong>Buat Account Baru!</strong></h1>
+		<h2>Sign Up Form</h2>
+		
+        <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <p>
+                        <label for="full-name">First Name</label>
+                        <input id="full-name" name="fullname" type="text">
+                    </p>
+                    <p>
+                        <label for="email">Last Name</label>
+                        <input id="last-name" name="lastname" type="text">
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                        <legend>Gender</legend>
+                        <p>
+                            <label for="gender">Input Gender</label>
+                            <input id="male-radio" type="radio" name="gender" value="male">
+                            <label for="male-radio">Male</label>
+                            <input id="female-radio" type="radio" name="gender" value="female">
+                            <label for="female-radio">Female</label>
+                            <input id="other-radio" type="radio" name="gender" value="other">
+                            <label for="other-radio">Other</label>                           
+                        </p>                                              
+                </fieldset>
+
+                <fieldset>
+                    <legend>Input Nationality</legend>
+                     <p>
+                        <label for="nationality">Nationality</label>
+                        <input type="text" name="nationality" list="listnationality" />
+                            <datalist id="listnationality">
+                                <select name="altlistnationality">
+                                <option value="indonesia">Indonesia</option>
+                                <option value="malaysia">Malaysia</option>
+                                <option value="singapura">Singapura</option>
+                                <option value="australia">Australia</option>
+                                </select>
+                            </datalist>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Input Language Spoken</legend>
+                    <p>
+                            <label for="langspoken">Language Spoken:</label>
+                            <input id="bhsindo-checkbox" type="checkbox" name="langspoken" value="bhsindo">
+                            <label for="bhsindo-checkbox">Bahasa Indonesia</label>
+                            <input id="english-checkbox" type="checkbox" name="langspoken" value="english">
+                            <label for="english-checkbox">English</label>
+                            <input id="otherlang-checkbox" type="checkbox" name="langspoken" value="otherlang">
+                            <label for="otherlang-checkbox">Other</label>
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Bio:</legend>
+                        <textarea rows="5" cols="20">                        
+                        </textarea>
+                </fieldset>
+                </form>
+
+                <form action="welcome.html" method="POST">                    
+                    <br><input type="submit" value="Sign Up" /></form></br>
+                </form>
+
+	</body>
+</html>
